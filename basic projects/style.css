@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 3rem;
+    /* background-color: #553d3d; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3rem;
+    font-size: 1.4vw;
+    padding: 2.2rem;
+    font-weight: 700;
+}
+
+nav span a i {
+    padding: .8rem;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+.center-heading {
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 2.2vw;
+    /* background-color: #d6a4a4; */
+}
+
+.text-feild p {
+    /* background-color: #854b4b; */
+    font-size:1.4vw;
+}
+
+.text-feild {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(176, 177, 122); */
+    padding: 2rem;
+}
+
+.navigation {
+    width: 20%;
+    /* background-color: #8ca9b6; */
+    /* padding: rem; */
+    /* margin: 0 2rem; */
+}
+
+.navigation div {
+    border-top: 1px solid black;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+    .image {
+        background-image: url(https://images.unsplash.com/photo-1560100729-c9a16444376e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        height: 38%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
