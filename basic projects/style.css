@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -51,11 +53,13 @@ nav span a i {
     padding: 0 2rem;
     font-size: 2.2vw;
     /* background-color: #d6a4a4; */
+    user-select: none;
 }
 
 .text-feild p {
     /* background-color: #854b4b; */
     font-size:1.4vw;
+    user-select: none;
 }
 
 .text-feild {
@@ -88,5 +92,52 @@ nav span a i {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        user-select: none;
     }
-    
+    .navigation div i{
+        opacity: 0;
+    }
+
+    .navigation div:hover i{
+        opacity: 1;
+        transition: 500ms;
+    }
+
+    .navigation div:hover{
+        background-color: #dee2d7;
+    }
+
+/* for mobile and tabs */
+
+@media (max-width: 700px) {
+    html, body {
+      /* background-color: rgb(112, 90, 90); */
+      font-size: 10px;
+    }
+
+    nav{
+      font-size: 3vw;
+    }
+    .center-heading {
+      font-size:4.4vw;
+      margin-top: 1rem;
+    }
+    .text-feild {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 2rem;
+    }
+    .text-feild p {
+     font-size:3.7vw;
+    }
+    .navigation {
+    width:100%;
+    font-size:3.9vw;
+  }
+
+  .image {
+      height: 38%;
+  }
+
+  }
