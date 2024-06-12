@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+    color: rgb(12, 11, 11);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5rem;
+    padding-top: 5rem;
+}
+.left{
+    height: 100%;
+    width: 45%;
+    background-color: #688a80;
+    padding: 2rem ;         
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    background-color: #517e72;
+}
+.left h1{
+    font-size: 7rem;
+    line-height: 6vw;
+}
+.left-bottom{
+    /* background-color: salmon; */
+    height: 40%;
+   
+}
+.colors{
+    /* background-color: saddlebrown; */
+
+    width: fit-content;
+    display: flex;
+    padding: .2xrem 1rem;
+    border-radius: 50px;
+    font-size:.8rem;
+    padding: .3rem 1rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+
+}
+.round1{
+    margin-left: 1rem;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(193, 214, 156);
+    border: 1px solid black;
+}
+.round2{
+    margin-left: .2rem;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(209, 243, 86);
+
+}
+.left h3{
+    font-size: 1.3rem;
+    margin-bottom: .4rem;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.right{
+    overflow: hidden;
+    padding: 3rem 0 0 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.right .right-head h2{
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+.right img{
+   
+    height: 90%;
+    width: 0% ;
+   
+}
+.image{
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url();
+}
