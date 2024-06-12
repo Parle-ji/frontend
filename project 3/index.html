@@ -1,97 +1,98 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>increase and decrease 
-        </title>
-        <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-        <style>
+<!DOCTYPE html>
+<html lang="en">
 
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            html,body{
-                height: 100%;
-                width: 100%;
-                background-color: gray;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increase and decrease
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            .wra{
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-                background-color: rgb(59, 58, 65);
-            }
-            .items{
-                background-color: rgb(156, 128, 142);
-                height: 9rem;
-                width: 17rem;
-                padding: 1rem;
-                border-radius: .2rem;
-                display:flex;
-                align-items: center;
-                flex-direction: column;
-            }
-            .btn{
-                display: flex;
-                height: 3rem;
-                background-color: rgb(255, 255, 255);
-                width: 100%;
-                padding: 1rem;
-                align-items: center;
-                justify-content: space-between;
-            }
-            button{
-                height: 2rem;
-                width: 4rem;
-                border: none;
-                background-color: #fff;
-                font-size: 2rem;
-            }
-            .heading{
-                margin-bottom: 1.5rem;
-            }
-          
-            .result{
-                height: 100%;
-                width: 4rem;
-                background-color: #ffffff;
-            }
-        </style>
-    </head>
-    <body>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: gray;
+        }
 
-        <div class="wra">
-            <div class="items">
+        .wra {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-                <div class="heading"><h3>
+            background-color: rgb(59, 58, 65);
+        }
+
+        .items {
+            background-color: rgb(156, 128, 142);
+            height: 9rem;
+            width: 17rem;
+            padding: 1rem;
+            border-radius: .2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            display: flex;
+            height: 3rem;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            padding: 1rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            height: 2rem;
+            width: 4rem;
+            border: none;
+            background-color: #fff;
+            font-size: 2rem;
+        }
+
+        .heading {
+            margin-bottom: 1.5rem;
+        }
+
+        .result {
+            height: 100%;
+            width: 4rem;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wra">
+        <div class="items">
+
+            <div class="heading">
+                <h3>
                     Increase And decrease
-                </h3></div>
-                <div class="btn">
-                    <button  id="plus" > <i class="ri-add-circle-fill"></i> </button>
+                </h3>
+            </div>
+            <div class="btn">
+                <button id="plus"> <i class="ri-add-circle-fill"></i> </button>
 
-                    <div class="result"></div>
-                    <button  id="minus"> <i class="ri-subtract-line"></i> </button>
-                </div>
-
-
+                <div class="result"></div>
+                <button id="minus"> <i class="ri-subtract-line"></i> </button>
             </div>
 
 
         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 
-
-
-
-      <script src="script.js"></script>
-    </body>
-    </html>
+</html>
