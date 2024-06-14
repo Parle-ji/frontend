@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  /* background-color: red; */
+  height: 30rem;
+  width: 25rem;
+  position: relative;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 25rem;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: px solid white;
+  border-radius: 5px;
+  z-index: 5;
+  padding: 1rem;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2.5rem 4.6rem;
+}
+
+.circle {
+  height: 8rem;
+  width: 8rem;
+  background-color: rgb(110, 171, 199);
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2rem yellow;
+  transition: 1s;
+  animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    top: -3rem;
+    left: -3rem;
+  }
+  50% {
+    top: -3rem;
+    left: -2.5rem;
+  }
+}
+
+.circle2 {
+  height: 11rem;
+  width: 11rem;
+  background-color: violet;
+  position: absolute;
+  bottom: -4rem;
+  right: -3rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2rem yellow;
+  animation: move2 5s ease-in-out infinite;
+}
+@keyframes move2 {
+  0%,
+  100% {
+    bottom: -4rem;
+    right: -3rem;
+  }
+  50% {
+    bottom: -3.8rem;
+    right: -3rem;
+  }
+}
+
+.details-section h1 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.details-section {
+  margin-bottom: 2.5rem;
+}
+.details-section h3 {
+  color: white;
+}
+
+.social-profile button {
+  height: 2rem;
+  width: 8rem;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  user-select: none;
+  border-radius: 3px;
+}
+
+.faded-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(139, 151, 151, 0.3);
+  color: red;
+  display: none;
+}
+
+.share-profile {
+  position: absolute;
+  height: 12.5rem;
+  width: 26rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  z-index: 19;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  display: none;
+}
+.heading {
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.iconBox {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid brown;
+  display: grid;
+  place-content: center;
+}
+.iconBox i {
+  font-size: 1.5rem;
+}
+
+.icon > .iconBox:nth-child(1) {
+  color: royalblue;
+  border: 1px solid royalblue;
+  cursor: pointer;
+}
+
+.icon > .iconBox:nth-child(2) {
+  border: 1px solid royalblue;
+  cursor: pointer;
+}
+
+.icon > .iconBox:nth-child(3) {
+  border: 1px solid rgb(190, 56, 46);
+  cursor: pointer;
+}
+
+.icon > .iconBox:nth-child(4) {
+  border: 1px solid rgb(132, 241, 82);
+  cursor: pointer;
+}
+
+.icon > .iconBox:nth-child(5) {
+  border: 1px solid royalblue;
+  cursor: pointer;
+}
+.iconBox:hover {
+  font-size: 2rem;
+}
