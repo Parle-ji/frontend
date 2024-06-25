@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+  user-select: none;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background-color: rgb(69, 71, 73);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1718315730729-c905a62fd491?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+  backdrop-filter: blur(7px);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* object-fit: cover;
+    object-position: center; */
+}
+#card {
+  height: 26rem;
+  width: 18rem;
+  background-color: rgba(255, 255, 255, 0.404);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  backdrop-filter: blur(7rem);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.uper-card {
+  height: 48%;
+  width: 100%;
+  background-color: rgba(139, 69, 19, 0.678);
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+}
+
+.image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 3rem rgb(236, 255, 61);
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.bottom-card {
+  height: 48%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(60, 77, 33, 0.486);
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-card p {
+  font-size: 2rem;
+}
+
+button{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 16px;
+    border:2px solid rgba(255, 255, 255, 0.911);
+    background-color:rgba(27, 114, 196, 0.747);
+    cursor: pointer;
+}
+button:hover{
+    text-decoration: underline;
+    transform: scale(1.02);
+}

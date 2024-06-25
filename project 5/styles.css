@@ -200,11 +200,12 @@ h1 {
     content: '✔';
     position: absolute;
     color: var(--dk-text);
-    font-size:1.05rem;
+    font-size:1rem;
     font-weight: 600;
     left:50%;
-    top:-3.5px;
-    transform: translateX(-50%)  translateY(40%);
+    /* top:-3.5px; */
+    top:50%;
+    transform: translateX(-50%)  translateY(-50%);
 }
 
 .check label {
