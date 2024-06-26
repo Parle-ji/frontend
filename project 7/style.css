@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* text-transform: capitalize; */
+  user-select: none;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background-color: rgb(38, 70, 83);
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  height: 25rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 9px;
+  border: 2px solid #bcff51ef;
+  position: relative;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+i {
+  font-size: 5rem;
+  position: absolute;
+  border: none;
+  color: rgba(255, 227, 70, 0.856);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  display: none;
+  transition: 2s;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+  animation: heart-blink 1s;
+}
+
+@keyframes heart-blink {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.5;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
