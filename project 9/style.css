@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #6e4c49;
+}
+h1 {
+  background-color: rgba(61, 114, 111, 0.644);
+  /* height: 100%; */
+  padding: 1rem;
+  font-size: 5rem;
+  border: 1px solid black;
+  border-radius: .3rem;
+  text-transform: capitalize;
+  z-index: 4;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 1rem;
+ z-index: 1;
+}
+.elem {
+  position: relative;
+}
+.elem img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  /* background-image: linear-gradient(to right, #f89b29,#ff0f7b); */
+  object-position: center;
+  box-shadow: 1px 1px 2rem rgb(222, 255, 33);
+  position: absolute;
+  padding: 3px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  /* transform: translate(-50%, -50%); */
+
+  background: hsla(175, 79%, 63%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(175, 79%, 63%, 1) 0%,
+    hsla(82, 96%, 57%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(175, 79%, 63%, 1) 0%,
+    hsla(82, 96%, 57%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(175, 79%, 63%, 1) 0%,
+    hsla(82, 96%, 57%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57ebde", endColorstr="#aefb2a", GradientType=1 );
+  transition: .5s;
+  opacity: 0;
+}
+
+.elem:hover img{
+  opacity: 1;
+}
