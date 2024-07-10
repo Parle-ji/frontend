@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "gilroy-bold";
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.top .allDocuments {
+  width: 80%;
+  max-width: 1200px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  /* border: 2px solid rgb(100, 73, 73); */
+}
+
+.allDocuments .nav {
+  height: 3.5rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nleft,
+.nright {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.nav a {
+  color: white;
+  pointer-events: all;
+}
+.nleft img {
+  height: 50px;
+}
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.heroLeft {
+  min-width: 50%;
+  height: 100%;
+}
+
+.heroLeft .elem {
+  height: 9vw;
+  overflow: hidden;
+}
+.heroLeft .elem h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 11vw;
+  font-family: "Kajiro";
+  line-height: 0.9;
+}
+.heroLeft button {
+  color: black;
+  cursor: pointer;
+  padding: 0.2vw 4vw;
+  margin-top: 2vw;
+  font-size: 3vw;
+  font-family: "kajiro";
+  pointer-events: all;
+}
+.heroRight {
+  width: 20%;
+  font-size: 1.2vw;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.imageDiv img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.imageDiv {
+  height: 6vw;
+  width: 9vw;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  background-image: url(https://images.unsplash.com/photo-1615212049275-95561aebe1b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.heroRight p:nth-child(3){
+  margin-bottom: 3.5rem;
+}
+
+/* yaha se back ka code ho rha hai... */
+
+.back {
+  height: 100vh;
+  width: 100%;
+}
+.back img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+
