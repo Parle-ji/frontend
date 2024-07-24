@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather aap by ritehs mishara</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- app search baar -->
+      <div class="searchBaar">
+        <input
+          type="text"
+          id="cityNameInput"
+          placeholder="Enter the city name"
+          spellcheck="true"
+        />
+        <div class="iconSearch">
+          <i class="ri-search-line"></i>
+        </div>
+      </div>
+
+      <!-- error msg -->
+      <div class="errormsg">
+        <h2>invailid city name...</h2>
+      </div>
+
+      <!-- app display data -->
+
+      <div class="appData">
+        <img src="images/rain.png" class="weatherIcon" alt="" />
+
+        <span class="temp"></span>
+
+        <span class="cityName"></span>
+      </div>
+
+      <!-- weather status -->
+      <div class="status">
+        <div class="leftStatus">
+          <img src="images/humidity.png" alt="" />
+          <div class="humidity">
+            <span id="humi"></span>
+            <p>humidity</p>
+          </div>
+        </div>
+        <div class="rightStatus">
+          <img src="images/wind.png" alt="" />
+          <div class="wind">
+            <span id="wind"></span>
+            <p>wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

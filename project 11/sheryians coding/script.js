@@ -5,8 +5,9 @@ alert()
 // }catch(e){
 //     alert(e)
 // }
+
 try{
-    Shery.imageEffect('.back', { style:5, debuge:true})
+    Shery.imageEffect('.back', { style:5, debug:true})
 }catch(e){
     alert(e)
 }

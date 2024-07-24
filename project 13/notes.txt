@@ -1,0 +1,59 @@
+
+// async function checkWeather(city) {
+//     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+//     let data = await response.json();
+//     console.log(data)
+
+//     cityName.innerHTML = data.name;
+//     temp.innerHTML = `${Math.round(data.main.temp)}°C`;
+//     humi.innerHTML = `${data.main.humidity} %`;
+//     wind.innerHTML = `${data.wind.speed} km/h`;
+
+
+
+//     let weatherCondition = data.weather[0].main.toLowerCase();
+
+//     // if (images[weatherCondition]) {
+//     //     weatherIcon.src = images[weatherCondition];
+//     // } else {
+//     //     weatherIcon.src = images['clear']; // Default icon
+//     }
+
+
+// }
+
+
+
+
+
+
+
+
+// const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=gorakhpur&appid=b3af3bcc7511be7ed7799617f61998a7&units=matric'
+
+// temp.innerHTML = Math.floor(data.main.temp);
+// temp.innerHTML = Math.round( `${data.main.temp} °C`);
+
+
+
+
+
+// let images = {
+
+//     rain: 'https://w7.pngwing.com/pngs/49/967/png-transparent-rain-rain-blue-cloud-drop-thumbnail.png',
+
+//     cloud: 'https://w7.pngwing.com/pngs/885/236/png-transparent-weather-forecasting-cloud-cover-wind-snow-cloudy-cloud-computer-wallpaper-storm-thumbnail.png',
+
+//     clear: 'https://img.freepik.com/premium-photo/sun-png_815088-3686.jpg?w=740',
+
+//     drizzle: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBC15BjdZhCyIfUMUbYHNQI0dsWhQ2xZJ-w&s',
+
+//     snow: 'https://static.vecteezy.com/system/resources/thumbnails/012/806/416/small_2x/3d-cartoon-weather-icon-snow-clouds-and-snowflakes-sign-isolated-on-transparent-background-3d-render-illustration-png.png',
+
+//     mist: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBo-A8TUle17EJMoZRCO0j_6l7SpscruN6w&s',
+
+//     wind: 'https://static.vecteezy.com/system/resources/thumbnails/047/195/529/small_2x/3d-illustration-wind-png.png',
+
+
+
+// }

@@ -1,4 +1,4 @@
-alert('Aapna tej samharo aape...');
+// alert('Aapna tej samharo aape...');
 let boxes = document.querySelectorAll('.box');
 console.log(boxes);
 
