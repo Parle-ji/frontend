@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* all: unset; */
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 100%;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* background-color: black; */
+}
+.wrapper img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(0.5rem) brightness(1);
+  background-color: black;
+}
+.card {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 62, 97, 0.815) 0%,
+    rgba(13, 46, 73, 0.76) 100%
+  );
+  height: 30rem;
+  width: 20rem;
+  max-width: 450px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0;
+}
+.card p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffffd8;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.tic-tac-toy {
+  background-color: #000000;
+  width: 80%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  aspect-ratio: 1/1;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem auto;
+}
+.box {
+  border: 1px solid black;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #899fa0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  font-size: 4rem;
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  color: #fbff01;
+  
+}
+p[data-user] {
+  font-size: 1.4rem;
+  /* border: 1px solid black; */
+  /* padding: 0 0.5rem; */
+  text-align: center;
+  /* text-decoration: underline; */
+}
+hr {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffc400de;
+  border: none;
+  height: 2px;
+}
+.btn {
+  display: block;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  background-color: #ff5100;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  display: none;
+}
+.btn.active {
+  display: block;
+}
+.win {
+  background-color: #08ff31;
+}
