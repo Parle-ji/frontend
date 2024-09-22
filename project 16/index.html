@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>JavaScript</h1>
+        <span class="desc">Age calculator</span>
+
+        <form>
+            <input type="date" id="date">
+            <!-- Pass 'event' to the function to prevent form submission -->
+            <button onclick="ageCalculator(event)" type="submit">Calculate</button>
+        </form>
+
+        <p class="result"> </p>
+
+        <script>
+            const userInput = document.querySelector('#date');
+            const result = document.querySelector('.result')
+            userInput.max = new Date().toISOString().split("T")[0]; // Setting max date to today
+            function ageCalculator(e) {
+                e.preventDefault(); // Prevents form submission
+
+                const birthDate = new Date(userInput.value); // Get the selected date value
+
+                const d1 = birthDate.getDate();
+                const m1 = birthDate.getMonth(); // Month is 0-indexed
+                const y1 = birthDate.getFullYear();
+
+                let today = new Date();
+
+                const d2 = today.getDate();
+                const m2 = today.getMonth(); // Month is 0-indexed (no +1 here)
+                const y2 = today.getFullYear();
+
+                let d3, m3, y3;
+
+                y3 = y2 - y1;
+
+                if (m2 > m1 || (m2 === m1 && d2 >= d1)) {
+                    m3 = m2 - m1;
+                } else {
+                    y3--;
+                    m3 = 12 + m2 - m1;
+                }
+
+                if (d2 >= d1) {
+                    d3 = d2 - d1;
+                } else {
+                    m3--;
+                    d3 = getDaysInMonth(y1, m1) + d2 - d1;
+                }
+
+                if (m3 < 0) {
+                    m3 = 11; // Reset month to December
+                    y3--;
+                }
+                result.innerHTML = ` You are ${y3} year , ${m3} Months and ${d3} days old...`
+
+            }
+
+
+            function getDaysInMonth(year, month) {
+                return new Date(year, month + 1, 0).getDate(); // Get the number of days in the given month
+            }
+        </script>
+
+</body>
+
+</html>
